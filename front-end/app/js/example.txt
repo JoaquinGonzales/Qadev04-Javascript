@@ -1,0 +1,20 @@
+var iMaxNum = 5;
+// Loop counters.
+var i, j;
+
+// Set the length of the array to iMaxNum + 1. 
+// The first array index is zero, not 1.
+var MultiplicationTable = new Array(iMaxNum + 1);
+
+// Loop for each major number (each row in the table)
+for (i = 1; i <= iMaxNum; i++)
+{
+    // Create the columns in the table
+    MultiplicationTable[i] = new Array(iMaxNum + 1);
+
+    // Fill the row with the results of the multiplication
+    for (j = 1; j <= iMaxNum; j++)
+    {
+        MultiplicationTable[i][j] = i * j;
+    }
+}
